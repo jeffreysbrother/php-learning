@@ -1,4 +1,6 @@
-<?php 
+<?php
+
+require 'functions.php';
 
 // variable
 $greeting = "hello!";
@@ -13,5 +15,8 @@ $person = [
 	'job' => 'web developer',
 	'hasThreeLegs' => false
 ];
+
+$animals = ["cat", "dog"];
+
 
 require 'index.view.php';
