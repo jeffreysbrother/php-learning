@@ -10,7 +10,8 @@ $names = ['jeff', 'james', 'joe'];
 $person = [
 	'age' => 33,
 	'hair' => 'brownish',
-	'job' => 'web developer'
+	'job' => 'web developer',
+	'hasThreeLegs' => false
 ];
 
 require 'index.view.php';
