@@ -28,10 +28,23 @@ class Task {
 	{
 		$this->description = $description;
 	}
+
+	public function complete()
+	{
+		$this->completed = true;
+	}
+
+	public function isComplete()
+	{
+		return $this->completed;
+	}
 }
 
+
+
 $task = new Task('Go to the store');
+// dd($task);
+$task->complete();
+var_dump($task->isComplete());
 
-dd($task);
-
-require 'index.view.php';
+// require 'index.view.php';
