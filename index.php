@@ -18,5 +18,20 @@ $person = [
 
 $animals = ["cat", "dog"];
 
+class Task {
+	protected $description;
+
+	protected $completed = false;
+
+	// the __constructor() method is triggered automaticaly upon instantiation
+	public function __constructor($value='')
+	{
+		$this->description = $description;
+	}
+}
+
+$task = new Task('Go to the store');
+
+dd($task);
 
 require 'index.view.php';
