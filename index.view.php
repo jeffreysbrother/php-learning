@@ -14,13 +14,13 @@
 
 	<ul>
 		<?php foreach ($names as $name) : ?>
-			<li><?= $name; ?></li>
+			<li><?= ucwords($name); ?></li>
 		<?php endforeach ?>
 	</ul>
 
 	<ul>
 		<?php foreach ($person as $key => $val) : ?>
-			<li><strong><?= $key; ?></strong>: <?= $val; ?></li>
+			<li><strong><?= ucwords($key); ?></strong>: <?= $val; ?></li>
 		<?php endforeach ?>
 	</ul>
 </body>
